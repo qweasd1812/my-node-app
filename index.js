@@ -30,14 +30,14 @@ const piValue = calculatePi(journalNumber);
 const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
 
-    res.write(${fio}<br>);
-    res.write(${group}<br>);
-    res.write(Число ПИ: );
+    res.write(`${fio}<br>`);
+    res.write(`${group}<br>`);
+    res.write(`Число ПИ: ${piValue}`);
 
     res.end();
 });
 
 const PORT = 3000;
 server.listen(PORT, () => {
-    console.log(Сервер запущен на http://localhost:);
+    console.log(`Сервер запущен на http://localhost:${PORT}`);
 });
