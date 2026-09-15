@@ -1,26 +1,21 @@
-// Задание 4: Исследование цикла событий (Event Loop) в Node.js
+// выполнил Вдовиченко Егор Дмитриевич
 
-// 1. Макротаска (таймер): попадает в фазу Timers следующей итерации Event Loop
 setTimeout(() => {
     console.log("1. setTimeout");
 }, 0);
 
-// 2. Макротаска (Check): выполняется в фазе Check (setImmediate)
 setImmediate(() => {
     console.log("2. setImmediate");
 });
 
-// 3. Микротаска (nextTick queue): имеет наивысший приоритет среди асинхронных задач
 process.nextTick(() => {
     console.log("3. process.nextTick");
 });
 
-// 4. Микротаска (Promise/microtask queue): выполняется после очереди nextTick, но до перехода к макротаскам
 Promise.resolve().then(() => {
     console.log("4. Promise.then");
 });
 
-// 5. Синхронный код: выполняется немедленно в основном потоке (Call Stack)
 console.log("5. Синхронный код");
 
 /*
