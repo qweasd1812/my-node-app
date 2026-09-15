@@ -1,43 +1,51 @@
+// выполнил Вдовиченко Егор Дмитриевич
 const http = require('http');
+const EventEmitter = require('events');
 
-// Функция вычисления числа Пи без использования Math.PI и сторонних библиотек
-function calculatePi(decimalPlaces) {
-    let pi = 0;
-    let divisor = 1;
-    for (let i = 0; i < 5000000; i++) {
-        if (i % 2 === 0) pi += 4 / divisor;
-        else pi -= 4 / divisor;
-        divisor += 2;
+class AppServer extends EventEmitter {
+    constructor() {
+        super();
+        this.server = null;
     }
-    
-    // Форматирование до нужного количества знаков без библиотеки Math
-    let strPi = pi.toString();
-    let dotIndex = strPi.indexOf('.');
-    if (dotIndex !== -1 && decimalPlaces > 0) {
-        return strPi.substring(0, dotIndex + 1 + decimalPlaces);
-    } else if (decimalPlaces === 0 && dotIndex !== -1) {
-        return strPi.substring(0, dotIndex);
+
+    start(port) {
+        this.server = http.createServer((req, res) => {
+            this.emit('request:received', { url: req.url, method: req.method });
+
+            res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+            res.end('Hello from Event-Driven Server!');
+        });
+
+        this.server.listen(port, () => {
+            this.emit('server:started', port);
+        });
     }
-    return strPi;
+
+    stop() {
+        if (this.server) {
+            this.server.close(() => {
+                this.emit('server:stopped');
+            });
+        }
+    }
 }
 
-const fio = "Вдовиченко Егор Дмитриевич";
-const group = "477";
-const journalNumber = 3;
+const app = new AppServer();
 
-const piValue = calculatePi(journalNumber);
-
-const server = http.createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-
-    res.write(`${fio}<br>`);
-    res.write(`${group}<br>`);
-    res.write(`Число ПИ: ${piValue}`);
-
-    res.end();
+app.on('server:started', (port) => {
+    console.log(`🚀 Сервер запущен на порту ${port}`);
 });
 
-const PORT = 3000;
-server.listen(PORT, () => {
-    console.log(`Сервер запущен на http://localhost:${PORT}`);
+app.on('request:received', ({ method, url }) => {
+    console.log(`📨 Получен запрос: ${method} ${url}`);
 });
+
+app.on('server:stopped', () => {
+    console.log('🛑 Сервер остановлен');
+});
+
+app.start(3000);
+
+setTimeout(() => {
+    app.stop();
+}, 10000);
