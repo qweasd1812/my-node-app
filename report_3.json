@@ -1,0 +1,77 @@
+{
+  "targetDirectory": "./project_3",
+  "totalFolders": 10,
+  "totalFiles": 11,
+  "totalSizeBytes": 488,
+  "totalSizeFormatted": "488 байт",
+  "extensions": {
+    ".txt": {
+      "count": 11,
+      "size": 488
+    }
+  },
+  "top5Largest": [
+    {
+      "path": "project_3/src/components/1/info.txt",
+      "name": "info.txt",
+      "size": 50,
+      "ext": ".txt"
+    },
+    {
+      "path": "project_3/src/components/2/info.txt",
+      "name": "info.txt",
+      "size": 50,
+      "ext": ".txt"
+    },
+    {
+      "path": "project_3/src/components/3/info.txt",
+      "name": "info.txt",
+      "size": 50,
+      "ext": ".txt"
+    },
+    {
+      "path": "project_3/src/components/info.txt",
+      "name": "info.txt",
+      "size": 48,
+      "ext": ".txt"
+    },
+    {
+      "path": "project_3/data/results/info.txt",
+      "name": "info.txt",
+      "size": 45,
+      "ext": ".txt"
+    }
+  ],
+  "top5Smallest": [
+    {
+      "path": "project_3/src/info.txt",
+      "name": "info.txt",
+      "size": 37,
+      "ext": ".txt"
+    },
+    {
+      "path": "project_3/data/info.txt",
+      "name": "info.txt",
+      "size": 38,
+      "ext": ".txt"
+    },
+    {
+      "path": "project_3/info.txt",
+      "name": "info.txt",
+      "size": 38,
+      "ext": ".txt"
+    },
+    {
+      "path": "project_3/src/utils/info.txt",
+      "name": "info.txt",
+      "size": 43,
+      "ext": ".txt"
+    },
+    {
+      "path": "project_3/data/input/info.txt",
+      "name": "info.txt",
+      "size": 44,
+      "ext": ".txt"
+    }
+  ]
+}
