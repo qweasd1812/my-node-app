@@ -1,0 +1,15 @@
+{
+  "name": "lab23-mongodb",
+  "version": "1.0.0",
+  "description": "Лабораторная работа 23 - Вдовиченко Егор Дмитриевич",
+  "scripts": {
+    "connect": "node src/mongo-connect.js",
+    "crud": "node src/mongo-crud.js",
+    "aggregations": "node src/mongo-aggregations.js",
+    "transactions": "node src/mongo-transactions.js",
+    "api": "node src/mongo-dao-api.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.3.0"
+  }
+}

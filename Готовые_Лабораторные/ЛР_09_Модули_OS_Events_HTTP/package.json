@@ -1,0 +1,10 @@
+{
+  "name": "lr09-os-events-http",
+  "version": "1.0.0",
+  "description": "Лабораторная работа 9: Модули OS, Events, HTTP (Вдовиченко Егор Дмитриевич)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "author": "Вдовиченко Егор Дмитриевич"
+}

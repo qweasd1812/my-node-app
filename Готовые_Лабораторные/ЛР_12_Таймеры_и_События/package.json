@@ -1,0 +1,9 @@
+{
+  "name": "lab12-timers-events",
+  "version": "1.0.0",
+  "scripts": {
+    "server": "node src/server-events-logger.js",
+    "timers": "node src/async-timers.js",
+    "loop": "node src/event-loop-demo.js"
+  }
+}

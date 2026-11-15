@@ -1,0 +1,9 @@
+{
+  "name": "lab13-callbacks-promises",
+  "version": "1.0.0",
+  "scripts": {
+    "cb": "node src/fileOperations.js",
+    "promises": "node src/fileOperationsPromises.js",
+    "hybrid": "node src/fileOperationsHybrid.js"
+  }
+}
