@@ -1,4 +1,4 @@
-// выполнил Вдовиченко Егор Дмитриевич
+// выполнил Вдовиченко Егор Дмитриевич, вариант 3
 const fs = require('fs');
 const path = require('path');
 const { Readable, Transform, pipeline } = require('stream');

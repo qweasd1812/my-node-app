@@ -1,4 +1,4 @@
-// выполнил Вдовиченко Егор Дмитриевич
+// выполнил Вдовиченко Егор Дмитриевич, вариант 3
 async function runDistributedTransaction(fail = false) {
     console.log(`\n=== Транзакция Replica Set MongoDB (fail=${fail}) ===`);
     console.log('[SESSION] client.startSession() -> Сессия открыта');

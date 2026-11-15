@@ -1,4 +1,4 @@
-// выполнил Вдовиченко Егор Дмитриевич
+// выполнил Вдовиченко Егор Дмитриевич, вариант 3
 const { Command } = require('commander');
 const program = new Command();
 

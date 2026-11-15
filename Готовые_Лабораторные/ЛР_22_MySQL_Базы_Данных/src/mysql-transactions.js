@@ -1,4 +1,4 @@
-// выполнил Вдовиченко Егор Дмитриевич
+// выполнил Вдовиченко Егор Дмитриевич, вариант 3
 async function demonstrateTransaction(shouldFail = false) {
     console.log(`\n=== Транзакция MySQL (shouldFail=${shouldFail}) ===`);
     console.log('[TX BEGIN] START TRANSACTION;');
