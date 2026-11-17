@@ -1,0 +1,11 @@
+{
+  "name": "lab18-os",
+  "version": "1.0.0",
+  "description": "Лабораторная работа 18 - Вдовиченко Егор Дмитриевич",
+  "scripts": {
+    "info": "node src/os-info.js",
+    "resources": "node src/os-resources.js",
+    "network": "node src/os-network.js",
+    "monitor": "node src/os-monitor.js"
+  }
+}

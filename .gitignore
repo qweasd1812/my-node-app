@@ -1,3 +1,16 @@
 node_modules/
 .env
 .DS_Store
+*.zip
+*.py
+__pycache__/
+lab_texts/
+backup_3/
+source_3/
+"методички для выполнения"/
+*.pdf
+data_3.txt
+processed_3.txt
+student_3.txt
+sync_report_3.txt
+report_3.json
