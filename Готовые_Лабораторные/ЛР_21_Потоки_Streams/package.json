@@ -1,0 +1,12 @@
+{
+  "name": "lab21-streams",
+  "version": "1.0.0",
+  "description": "Лабораторная работа 21 - Вдовиченко Егор Дмитриевич",
+  "scripts": {
+    "readable": "node src/stream-readable.js",
+    "writable": "node src/stream-writable.js",
+    "pipeline": "node src/stream-pipeline.js",
+    "transform": "node src/stream-transform.js",
+    "full": "node src/stream-pipeline-full.js"
+  }
+}
