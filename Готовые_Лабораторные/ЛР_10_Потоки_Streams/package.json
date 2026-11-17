@@ -1,0 +1,10 @@
+{
+  "name": "lr10-streams",
+  "version": "1.0.0",
+  "description": "Лабораторная работа 10: Потоки Streams (Вдовиченко Егор Дмитриевич)",
+  "main": "src/stream-pipeline.js",
+  "scripts": {
+    "start": "node src/stream-pipeline.js"
+  },
+  "author": "Вдовиченко Егор Дмитриевич"
+}
