@@ -1,0 +1,19 @@
+{
+  "name": "lab24-rest-api",
+  "version": "1.0.0",
+  "description": "Лабораторная работа 24 - Вдовиченко Егор Дмитриевич",
+  "scripts": {
+    "basic": "node src/koa-basic-api.js",
+    "mvc": "node src/koa-mvc-api.js",
+    "pagination": "node src/koa-validation-pagination.js",
+    "auth": "node src/koa-auth-security.js",
+    "prod": "node src/koa-production-api.js"
+  },
+  "dependencies": {
+    "koa": "^2.15.0",
+    "@koa/router": "^12.0.1",
+    "joi": "^17.12.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcrypt": "^5.1.1"
+  }
+}
