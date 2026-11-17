@@ -1,0 +1,12 @@
+{
+  "name": "lab19-events",
+  "version": "1.0.0",
+  "description": "Лабораторная работа 19 - Вдовиченко Егор Дмитриевич",
+  "scripts": {
+    "basic": "node src/events-basic.js",
+    "once": "node src/events-once.js",
+    "class": "node src/events-class.js",
+    "advanced": "node src/events-advanced.js",
+    "bus": "node src/event-bus.js"
+  }
+}
