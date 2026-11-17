@@ -1,0 +1,10 @@
+{
+  "name": "lab14-filesystem",
+  "version": "1.0.0",
+  "scripts": {
+    "t1": "node src/task1_2_files_dirs.js",
+    "t3": "node src/task3_search_filter.js",
+    "t4": "node src/task4_streams_count.js",
+    "t5": "node src/task5_copy_gzip.js"
+  }
+}
