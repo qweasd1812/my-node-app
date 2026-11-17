@@ -1,0 +1,12 @@
+{
+  "name": "lab20-http",
+  "version": "1.0.0",
+  "description": "Лабораторная работа 20 - Вдовиченко Егор Дмитриевич",
+  "scripts": {
+    "server": "node src/http-server.js",
+    "headers": "node src/http-headers.js",
+    "body": "node src/http-body.js",
+    "routes": "node src/http-routes.js",
+    "advanced": "node src/http-advanced.js"
+  }
+}
